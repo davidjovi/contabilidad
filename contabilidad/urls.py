@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'^servicios/tributarios$', 'app.views.tributarioView', name='tributario'),
     url(r'^servicios/financieros$', 'app.views.financieroView', name='financiero'),
     url(r'^servicios/laborales$', 'app.views.laboralView', name='laboral'),
+    url(r'^contacto$', 'app.views.contactoView', name='contacto'),
     # url(r'^contabilidad/', include('contabilidad.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

@@ -32,3 +32,7 @@ def laboralView(request):
 	page = 'content/servicios.html'
 	pageService = 'content/service/laboral.html'
 	return render_to_response('index.html', locals())
+
+def contactoView(request):
+	page = 'content/contacto.html'
+	return render_to_response('index.html', locals())	
