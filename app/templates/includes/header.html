@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8" />
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="/static/css/steelshet.css" />
+	<link rel="stylesheet" type="text/css" href="/static/js/fancybox/source/jquery.fancybox.css?v=2.1.4" />
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="/static/js/stickymojo/stickyMojo.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="/static/js/fancybox/source/jquery.fancybox.pack.js"></script>
 	<script src="/static/js/jsFunctions.js" type="text/javascript"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript">
-	</script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false">
-	</script>
 	<script>
 		$(document).ready(function(){
 		    $('#sidebar').stickyMojo({footerID: '#footer', contentID: '#main'});
@@ -27,16 +27,16 @@
 			<nav>
 				<ul>
 					<li class="current">
-						<a href="/" title="Inicio">INICIO</a>
+						<a id="inicio" href="/" title="Inicio">INICIO</a>
 					</li>
-					<li>
-						<a href="/nosotros" title="nosotros">NOSOTROS</a>
+					<li class="">
+						<a id="nosotros" href="/nosotros" title="nosotros">NOSOTROS</a>
 					</li>
-					<li>
-						<a href="/servicios" title="servicios">SERVICIOS</a>
+					<li class="">
+						<a id="servicios" href="/servicios" title="servicios">SERVICIOS</a>
 					</li>
-					<li>
-						<a href="/contacto" title="contacto">CONTACTO</a>
+					<li class="">
+						<a id="contacto" href="/contacto" title="contacto">CONTACTO</a>
 					</li>
 				</ul>
 			</nav>
@@ -45,7 +45,7 @@
 	</header>
 
 	<div id="sidebar">
-		<a href="#">
+		<a href="/contacto">
 			<img src="http://widget.uservoice.com/dcache/widget/feedback-tab.png?t=contacto&c=ffffff&r=90" alt="" />
 		</a>
 	</div>

@@ -1,8 +1,11 @@
 	<h1>Contacto</h1>
 
-	<p>Contactese conmigo completando los campos sugeridos en el formulario</p>
-	<form id="contactForm" action="/contacto" method="post">
+	<p>Contáctese conmigo completando los campos sugeridos en el formulario</p>
+	<form id="contactForm" action="/contact" method="post">
+		{% csrf_token %}
 		{{ form }}
+
+		<input id="btnContact" class="more buttonContact" type="submit" name="contacto" value="Contactame" style="width: 100%;" />
 	</form>
 
 	<div id="divContentMap">

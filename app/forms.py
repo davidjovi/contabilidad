@@ -18,8 +18,9 @@ class contactForm(forms.Form):
     							required = True, 
     							widget=Html5EmailInput(attrs={'placeholder' : 'ejemplo@ejemplo.cl',
     															'required' : '1'}))
-    telefono = forms.IntegerField( label = 'Teléfono (Opcional)' , 
-    								widget=Html5TelInput(attrs={'placeholder' : '1234 567'}))
+    telefono = forms.IntegerField( label = 'Teléfono (*)' , 
+    								widget=Html5TelInput(attrs={'placeholder' : '1234 567',
+                                                                'required' : '1'}))
     
     asunto = forms.CharField( label = 'Asunto  (*)' , 
                                 required = True, 
@@ -39,15 +40,6 @@ class contactForm(forms.Form):
         elif words < 3:
             raise forms.ValidationError('Ingresar Nombre superior a 3 caracteres')
         return nombre
-
-    def clean_mensaje(self):
-        mensaje = self.cleaned_data['mensaje']
-        words = len(mensaje.strip())
-        if words == 0:
-            raise forms.ValidationError('No ingrese espacios en blanco')
-        elif words < 10:
-            raise forms.ValidationError('Ingresar mas de 10 caracteres')
-        return mensaje
 
     def clean_email(self):
         email = self.cleaned_data['email']
@@ -77,3 +69,12 @@ class contactForm(forms.Form):
         elif words < 3:
             raise forms.ValidationError('Ingresar más de 3 caracteres')
         return asunto        
+
+    def clean_mensaje(self):
+        mensaje = self.cleaned_data['mensaje']
+        words = len(mensaje.strip())
+        if words == 0:
+            raise forms.ValidationError('No ingrese espacios en blanco')
+        elif words < 10:
+            raise forms.ValidationError('Ingresar mas de 10 caracteres')
+        return mensaje
