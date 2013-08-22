@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.contabilidadjm\.cl$
 RewriteRule ^(.*)$ http://www.contabilidadjm.cl
 
+AddType application/vnd.ms-fontobject .eot
 AddType font/ttf .ttf
-AddType font/eot .eot
 AddType font/otf .otf
-AddType font/woff .woff
+AddType application/x-font-woff .woff
