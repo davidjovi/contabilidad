@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.contabilidadjm\.cl$
+RewriteRule ^(.*)$ http://www.contabilidadjm.cl
+
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
