@@ -5,17 +5,19 @@ body{font-family:'Oswald';font-size:16px}
 footer{background:url("images/img01.jpg");background-repeat:repeat;bottom:0;display:block;height:auto;margin-bottom:-20px;width:100%;}
 footer a{color:#838383;font-size:1.3em}
 footer p{color:#6a6a6a;font-family:'Abel';font-size:1.1em;padding:1.5em;text-align:center}
-footer section{border-bottom:1px solid #303030;padding-bottom:0;}
+footer section{background:url("images/img07.png") repeat;border-bottom:1px solid #303030;padding-bottom:0;width:100%;}
 footer section div{display:inline-block;vertical-align:top;}
-footer section div h2{color:#fff;margin:0;padding:1em 0}
+footer section div h2{color:#6a6a6a;margin:0;padding:1em 0}
 footer section div ul{display:inline-block;list-style:none;margin:0;position:relative;}
-footer section div ul li{border-top:1px solid #303030;padding:.94em 0;}
+footer section div ul li{border-top:1px solid #a0a09f;padding:.94em 0;}
 footer section div ul li a{background:url("images/img10.png") no-repeat left top;background-position:left center;color:#a0a09f;display:block;font-size:1em;padding:0 0 0 1.87em;text-decoration:none}
-footer section div ul li a:hover{color:#f9f9f9}
+footer section div ul li a:hover{color:#838383}
 footer section div ul li.first{border-top:0}
 footer section div.extern{background:url("images/img07.png") repeat;display:inline-block;margin-left:-6%;}
+footer section div.extern h2{color:#6a6a6a}
 footer section div.extern p{margin:0}
-footer section div.works{display:inline-block;vertical-align:top;margin:0 3em;width:65%}
+footer section div.works{display:inline-block;vertical-align:top;margin-bottom:0;margin-left:3em;margin-right:3em;margin-top:0;width:65%;}
+footer section div.works h2{color:#6a6a6a;text-align:center}
 h1,h2{font-family:'Oswald';font-weight:300}
 header{background:#f3f3f3;height:5.2em;width:100%;}
 header div{display:inline-block;float:right;vertical-align:top}
@@ -45,6 +47,9 @@ ul{margin:0;padding:0}
 .service{display:inline-block;padding-left:2em;vertical-align:top;width:70%;}
 .service article ul{display:block;list-style:none;}
 .service article ul li{-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);background-color:#da4f49;background-image:0 to(#bd362f);border:1px solid #bbb;border-radius:5px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);color:#fff;cursor:pointer;float:left;text-shadow:0 -1px 0 rgba(0,0,0,0.25);border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);margin:.5em;padding:.5em}
+.swiper-container,width 100%,.swiper-slide,color #fff{font-size:25px;line-height:200px;text-align:center}
+.swiper-scrollbar{background:#f00;bottom:10px;box-shadow:1px 1px 1px rgba(0,0,0,0.8) inset;height:10px;left:3%;position:absolute;width:94%}
+.swiper-scrollbar-drag{background:#ff0;box-shadow:0 1px 1px #000}
 .title{color:#272727}
 #contable{display:inline-block;vertical-align:top}
 #contactForm{display:inline-block;vertical-align:top;width:50%;}

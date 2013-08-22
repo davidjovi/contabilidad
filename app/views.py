@@ -9,6 +9,7 @@ from forms import contactForm
 from django.http import HttpResponseRedirect
 from django.core import serializers
 import json
+from models import contact as contactModel
 
 def home(request):
 	current = 'inicio'
@@ -63,10 +64,18 @@ def contactValid(request):
 			email = form.cleaned_data['email']
 			mensaje = form.cleaned_data['mensaje']
 
+			contacto = contactModel()
+			contacto.con_name = nombre
+			contacto.con_email = email
+			contacto.con_number = telefono
+			contacto.con_subject = asunto
+			contacto.con_message = mensaje
+
 			if request.is_ajax():
 				data = {'ok':'ok'}
 				json = simplejson.dumps(data)
 				# json = serializers.serialize('json', data)
+				contacto.save()
 
 				return HttpResponse(json, mimetype="application/javascript")
 
@@ -84,3 +93,6 @@ def contactValid(request):
 	else:
 		form = contactForm()
 		return render_to_response('index.html', locals())
+
+def test(request):
+	return render_to_response('test.html', locals())

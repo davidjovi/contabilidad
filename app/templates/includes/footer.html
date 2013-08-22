@@ -2,27 +2,44 @@
 		<section>
 
 			<div class="extern">
-				<p>UF: 22.985,35</p>
-				<p>UTM: 40.326,00</p>
-				<p>IPSA: 3.717,80</p>
-				<p>IPC: 0,60</p>
+				<p>UF: <script type="text/javascript">indicadorEOF(6);</script></p>
+				<p>UTM: <script type="text/javascript">indicadorEOF(11);</script></p>
+				<p>IPC: <script type="text/javascript">indicadorEOF(0);</script></p>
+				<p>DOLAR: <script type="text/javascript">indicadorEOF(8);</script></p>
 			</div>
 
 			<div class="works">
-				
+				<h2>Clientes</h2>
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide blue-slide">
+				        <img src="/static/img/senefa.png" width="250" alt="Senefa" />
+				      </div>
+				      <div class="swiper-slide blue-slide">
+				        <img src="/static/img/distrubuidorajn.png" width="250" alt="distribuidoraJN" />
+				      </div>
+				      <div class="swiper-slide orange-slide">
+				        <img src="http://www.themadrid.cl/static/media/img/logo.png" width="250" alt="Madrid S.A." />
+				      </div>
+				      <div class="swiper-slide red-slide">
+				        <img src="/static/img/industrial.png" width="200" alt="Industrial" />
+				      </div>
+				    </div>
+				    <div class="swiper-scrollbar"></div>
+				 </div>
 			</div>
 
 			<div>
 				<h2>Sistemas de Interés</h2>
 				<ul>
 					<li class="first">
-						<a href="#">SII</a>
+						<a href="http://home.sii.cl" alt="SII" title="Servicios de Impuestos Internos" target="_blanck">SII</a>
 					</li>
 					<li>
-						<a href="#">Dirección del trabajo</a>
+						<a href="http://www.dt.gob.cl" alt="Direccion del trabajo" title="Direccion del trabajo" target="_blanck">Dirección del trabajo</a>
 					</li>
 					<li>
-						<a href="#">Tesoreria General</a>
+						<a href="http://www.tesoreria.cl" alt="Tesoreria" title="Tesoreria General" target="_blanck">Tesoreria General</a>
 					</li>
 				</ul>	
 			</div>
@@ -35,5 +52,17 @@
 	var current = "{{current}}";
 	changeClass(current);
 </script>
+<script>
+  var mySwiper = new Swiper('.swiper-container',{
+    slidesPerView: 3,
+    //Enable Scrollbar
+    scrollbar: {
+      container: '.swiper-scrollbar',
+      hide: false,
+      draggable: true,
+      snapOnRelease: true  
+    }
+  })
+  </script>
 </body>
 </html>
