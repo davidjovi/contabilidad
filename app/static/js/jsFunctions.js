@@ -24,6 +24,17 @@ function changeClass(id){
 	jQuery('#'+ id).parent().attr('class', 'current');
 }
 
+//abreviación para document.getElementById
+function g(id) {
+    return document.getElementById(id);
+}
+ 
+//función que obtiene el valor deseado
+//formatear_numero es una función definida en el archivo del bci
+function valor(indice) {
+    return formatear_numero(arrValores[indice].valor2);
+}
+
 
 jQuery(document).on('ready',function(){
 	jQuery('body').delegate('#btnContact', 'click',function(){
@@ -73,4 +84,22 @@ jQuery(document).on('ready',function(){
 			return false;
 		});
 	});
+
+	
+	var uf = 4,usd = 55,utm = 5,ipc = 23
+    if (typeof(arrValores) != "undefined") {
+        // g('uf').innerHTML = valor(uf);
+        // g('utm').innerHTML = valor(utm);
+        // g('usd').innerHTML = valor(usd);
+        // g('euro').innerHTML = valor(euro);
+        // g('yen').innerHTML = valor(yen);
+        jQuery('#uf').html(valor(uf));
+        jQuery('#utm').html(valor(utm));
+        jQuery('#ipc').html(valor(ipc));
+        jQuery('#dolar').html(valor(usd));
+
+
+    }
+
+
 });

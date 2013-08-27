@@ -1,5 +1,5 @@
-@font-face{font-family:'Abel';font-style:normal;font-weight:400;src:local('Abel'),local('Abel-Regular'),url("http://themes.googleusercontent.com/static/fonts/abel/v3/wnJbeWILdr-ZMJJAMsiXsvesZW2xOQ-xsNqO47m55DA.woff") format('woff')}
-@font-face{font-family:'Oswald';font-style:normal;font-weight:300;src:local('Oswald Light'),local('Oswald-Light'),url("http://themes.googleusercontent.com/static/fonts/oswald/v7/HqHm7BVC_nzzTui2lzQTDbO3LdcAZYWl9Si6vvxL-qU.woff") format('woff')}
+@font-face{font-family:'Abel';src:url("fonts/abel-regular-webfont.eot");src:url("fonts/abel-regular-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/abel-regular-webfont.ttf") format('truetype'),url("fonts/abel-regular-webfont.svg#abelregular") format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:'Oswald';src:url("fonts/oswald-light-webfont.eot");src:url("fonts/oswald-light-webfont.eot?#iefix") format('embedded-opentype'),url("fonts/oswald-light-webfont.ttf") format('truetype'),url("fonts/oswald-light-webfont.svg#oswaldlight") format('svg');font-weight:300;font-style:normal}
 a{text-decoration:none}
 body{font-family:'Oswald';font-size:16px}
 footer{background:url("images/img01.jpg");background-repeat:repeat;bottom:0;display:block;height:auto;margin-bottom:-20px;width:100%;}
